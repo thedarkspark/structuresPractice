@@ -1,22 +1,23 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+
+//Structures pg 132
+
+struct Person{
+    var name : String
+    func sayWhatUp() {
+        print ("What up, my name is \(name)")
+    }
+}
+let firstPerson = Person(name:"Master Tech")
+print(firstPerson.name)
+firstPerson.sayWhatUp()
+
+
 
 
 //Instances pg 134
-
-struct Shirt {
-    var size: Size
-    var color: Color
-}
-
-
-// Defines attributes of the shirt
-
-let myShirt = Shirt (size: .xl, color: .blue)
-//Creates an instance of one shirt
-
-let yourShirt = Shirt (size:.m, color:.red)
-// size and color are undeclared? How?
-//DONT KNOW WHY IM GETTING COMPILER ERROR HERE!?!?!
-//Moving right along though
 
 //Initializers "init()" pg 135
 //Give the default value of zero and false
@@ -24,6 +25,8 @@ let yourShirt = Shirt (size:.m, color:.red)
 var string = String.init() // ""
 var integer = int.init() // 0
 var bool = Bool.init() // false
+
+
 
 
 
