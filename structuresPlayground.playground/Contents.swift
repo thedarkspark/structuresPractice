@@ -4,7 +4,7 @@ import UIKit
 
 //This should be fun
 
-//Structures
+//Structures pg. 131
 //these are variables/properties of "Human"
 struct Human {
     var numberOfLegs : Int
