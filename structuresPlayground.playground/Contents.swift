@@ -51,6 +51,26 @@ fourByFiveByTwo.volume
 let fourByFiveByThree = Box(width: 4, height: 5, depth: 3)
 fourByFiveByThree.volume
 
+//want more?? lol here you go
+//property observers "willSet" and "didSet"
+//pg 146
+
+struct StepCounter {
+    var totalSteps: Int = 0 {
+        willSet {
+            print("About to set totalSteps to \(newValue)")
+        }
+        didSet {
+            if totalSteps > oldValue {
+                print ("Added \(totalSteps - oldValue) steps")
+            }
+        }
+    }
+}
+
+var stepCounter = StepCounter()
+stepCounter.totalSteps = 40
+stepCounter.totalSteps = 100
 
 
 
